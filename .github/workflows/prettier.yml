@@ -1,6 +1,11 @@
 name: Prettier
 on: [push, pull_request]
 jobs:
+  permissions:
+    contents: 'read'
+    id-token: 'write'
+    issues: 'write' 
+
   prettier:
     name: runner / prettier
     runs-on: ubuntu-latest
