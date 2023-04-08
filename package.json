@@ -5,6 +5,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "./node_modules/eslint/bin/eslint.js ./server.js",
     "lint:fix": "./node_modules/eslint/bin/eslint.js ./server.js --fix",
@@ -22,5 +23,12 @@
     "eslint": "^8.38.0",
     "nodemon": "^2.0.22",
     "prettier": "^2.8.7"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "**/test/**",
+      "**/docs/**"
+    ],
+    "ext": "js"
   }
 }
