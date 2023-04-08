@@ -1,9 +1,20 @@
 name: ESLint
 on: [push, pull_request]
 jobs:
-  eslint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      name: ESLint
-        - uses: stefanoeb/eslint-action@1.0.2
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Setup Node.js
+              uses: actions/setup-node@v1
+              with:
+                  node-version: '18'
+
+            - name: Cache node modules
+              uses: actions/cache@v2
+
+            - name: Install Dependencies
+              run: npm install
+
+            - name: Run the linter
+              run: npm run lint
