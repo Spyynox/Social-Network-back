@@ -1,10 +1,13 @@
 {
+  "type": "module",
   "name": "social-network-back",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/eslint/bin/eslint.js ./server.js",
+    "lint:fix": "./node_modules/eslint/bin/eslint.js ./server.js --fix"
   },
   "author": "Maxime Mbiya Kiaku",
   "license": "ISC",
@@ -12,6 +15,9 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.38.0",
     "nodemon": "^2.0.22"
   }
 }
