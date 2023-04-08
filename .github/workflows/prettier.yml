@@ -19,5 +19,3 @@ jobs:
           # More about reviewdog reporter level at
           # https://github.com/reviewdog/reviewdog#reporters
           level: warning
-  permissions:
-    contents: 'read'
