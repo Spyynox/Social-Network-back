@@ -1,0 +1,11 @@
+# Ignore artifacts:
+.github
+.swc
+.cache
+build
+package-lock.json
+public
+coverage
+node_modules
+.env
+yarn.lock

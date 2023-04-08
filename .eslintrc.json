@@ -20,6 +20,7 @@
         "indent": ["error", 4],
         "linebreak-style": ["error", "windows"],
         "quotes": ["error", "single"],
-        "semi": ["error", "always"]
+        "semi": ["error", "always"],
+        "keyword-spacing": ["error", { "before": true, "after": true }]
     }
 }
