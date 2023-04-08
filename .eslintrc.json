@@ -9,6 +9,7 @@
         "plugin:@typescript-eslint/recommended",
         "prettier"
     ],
+    "operator-linebreak": ["error", "none"],
     "overrides": [],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
