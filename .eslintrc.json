@@ -21,6 +21,8 @@
         "linebreak-style": ["error", "windows"],
         "quotes": ["error", "single"],
         "semi": ["error", "always"],
-        "keyword-spacing": ["error", { "before": true, "after": true }]
+        "keyword-spacing": ["error", { "before": true, "after": true }],
+        "prettier/prettier": "warn",
+        "no-console": "warn"
     }
 }
