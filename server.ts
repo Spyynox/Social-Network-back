@@ -15,6 +15,4 @@ app.get('/api/products', (req, res) => {
     res.json(products);
 });
 
-app.listen(port, () => {
-    console.log(`Server is listgggening on port ${port}`);
-});
+app.listen(port);
