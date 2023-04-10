@@ -8,8 +8,8 @@
         "start": "ts-node src/index.ts",
         "dev": "nodemon server.ts",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "lint": "./node_modules/eslint/bin/eslint.js ./server.ts",
-        "lint:fix": "./node_modules/eslint/bin/eslint.js ./server.ts --fix",
+        "lint": "./node_modules/.bin/eslint '**/*.ts'",
+        "lint:fix": "./node_modules/.bin/eslint '**/*.ts' --fix",
         "prettier": "prettier . --check",
         "prettier:fix": "prettier --write .",
         "typeorm": "typeorm-ts-node-commonjs"

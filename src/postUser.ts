@@ -1,6 +1,7 @@
 import { AppDataSource } from './data-source';
-
 import { User } from './entity/User';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 AppDataSource.initialize()
     .then(async () => {
@@ -10,7 +11,7 @@ AppDataSource.initialize()
 
         user.pseudo = 'Timber';
         user.email = 'test@test@gmail';
-        user.password = 'test';
+        user.password = process.env.USER_PASSWORDD;
         user.bio = 'test de la bio';
         user.followers = [''];
         user.following = [''];
